@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #6cdf58;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ExperienceController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/main/Services.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Catering" layoutX="53.0" layoutY="135.0" mnemonicParsing="false" onAction="#CaterControl" opacity="0.11" prefHeight="44.0" prefWidth="181.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect></Button>
+      <Button fx:id="Maps" layoutX="59.0" layoutY="274.0" mnemonicParsing="false" onAction="#mapControl" opacity="0.11" prefHeight="44.0" prefWidth="181.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="Fares" layoutX="56.0" layoutY="415.0" mnemonicParsing="false" onAction="#FareControl" opacity="0.11" prefHeight="44.0" prefWidth="181.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="Refund" layoutX="57.0" layoutY="571.0" mnemonicParsing="false" opacity="0.11" prefHeight="44.0" prefWidth="181.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="Home" layoutX="892.0" layoutY="41.0" mnemonicParsing="false" onAction="#HomeControl" prefHeight="37.0" prefWidth="79.0" text="HOME">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>

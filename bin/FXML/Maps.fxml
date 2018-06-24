@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #f1c40f;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MapController">
+   <children>
+      <ImageView fitHeight="737.0" fitWidth="636.0" layoutX="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/main/mumbai%20Local%20Train%20Route.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="709.0" fitWidth="543.0" layoutX="705.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/main/map%20rail.PNG" />
+         </image>
+      </ImageView>
+      <Button fx:id="Home" layoutY="14.0" mnemonicParsing="false" onAction="#mapControl" prefHeight="37.0" prefWidth="79.0" text="Home" textFill="#80cf13">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

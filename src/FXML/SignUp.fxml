@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #E67E22;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignupController">
+ 
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1200.0" layoutX="78.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/railwayyy/registration%20form.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="144.0" layoutY="98.0" prefHeight="39.0" prefWidth="124.0" style="-fx-background-color: #E67E22;" text="Name:" textFill="#d6d2d4">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="144.0" layoutY="151.0" prefHeight="39.0" prefWidth="124.0" style="-fx-background-color: #E67E22;" text="Surname:" textFill="#d2d7d3">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="146.0" layoutY="262.0" prefHeight="39.0" prefWidth="124.0" style="-fx-background-color: #E67E22;" text="DOB:" textFill="#d2d7d3">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="Address" layoutX="354.0" layoutY="313.0" opacity="0.75" prefHeight="60.0" prefWidth="200.0" promptText="Enter Address" />
+      <Label layoutX="149.0" layoutY="321.0" prefHeight="49.0" prefWidth="124.0" style="-fx-background-color: #E67E22;" text="Address:" textFill="#d2d7d3">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="154.0" layoutY="383.0" prefHeight="39.0" prefWidth="124.0" style="-fx-background-color: #E67E22;" text="country:" textFill="#d2d7d3">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="156.0" layoutY="438.0" prefHeight="39.0" prefWidth="124.0" style="-fx-background-color: #E67E22;" text="Mobile:" textFill="#d2d7d3">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="150.0" layoutY="488.0" prefHeight="39.0" prefWidth="131.0" style="-fx-background-color: #E67E22;" text="Email id:" textFill="#d2d7d3">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="country" layoutX="349.0" layoutY="384.0" opacity="0.75" prefHeight="38.0" prefWidth="210.0" promptText="Enter Country" />
+      <TextField fx:id="Mobile" layoutX="353.0" layoutY="441.0" onAction="#Submit" opacity="0.75" prefHeight="31.0" prefWidth="178.0" promptText="Enter Mobile" />
+      <TextField fx:id="Email" layoutX="345.0" layoutY="491.0" opacity="0.75" prefHeight="38.0" prefWidth="297.0" promptText="Enter Email" />
+      <RadioButton fx:id="male" layoutX="330.0" layoutY="534.0" mnemonicParsing="false" text="MALE" textFill="#d2d7d3">
+         <font>
+            <Font size="27.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="female" layoutX="522.0" layoutY="534.0" mnemonicParsing="false" text="FEMALE" textFill="#d2d7d3">
+         <font>
+            <Font size="27.0" />
+         </font></RadioButton>
+      <Label layoutX="153.0" layoutY="537.0" prefHeight="39.0" prefWidth="124.0" style="-fx-background-color: #E67E22;" text="Gender:" textFill="#d2d7d3">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Button fx:id="Submit" layoutX="453.0" layoutY="590.0" mnemonicParsing="false" onAction="#SignupAction" prefHeight="38.0" prefWidth="92.0" text="SUBMIT">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Button fx:id="Reset" layoutX="621.0" layoutY="590.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="92.0" text="RESET">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <TextField fx:id="surname" layoutX="358.0" layoutY="152.0" opacity="0.71" prefHeight="38.0" prefWidth="178.0" promptText="Enter your surname" />
+      <TextField fx:id="name" layoutX="353.0" layoutY="99.0" opacity="0.71" prefHeight="38.0" prefWidth="188.0" promptText="Enter name" />
+      <Button fx:id="Login" layoutX="1082.0" layoutY="33.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="41.0" prefWidth="114.0" text="LOGIN">
+         <font>
+            <Font name="MS Office Symbol Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <DatePicker fx:id="dob" layoutX="359.0" layoutY="263.0" prefHeight="38.0" prefWidth="188.0" />
+      <TextField fx:id="password" layoutX="359.0" layoutY="210.0" opacity="0.71" prefHeight="38.0" prefWidth="188.0" promptText="Enter Password" />
+      <Label layoutX="145.0" layoutY="209.0" prefHeight="39.0" prefWidth="124.0" style="-fx-background-color: #E67E22;" text="Password:" textFill="#d2d7d3">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
